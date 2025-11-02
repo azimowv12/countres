@@ -103,32 +103,6 @@ const HeroSection = () => {
             ))}
           </div>
 
-          {/* Mashhur davlatlar */}
-          <div className="max-w-5xl mx-auto">
-            <h2 className="text-2xl font-bold text-white mb-8">Mashhur Davlatlar</h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              {featuredCountries.map((country, index) => (
-                <div
-                  key={index}
-                  className={`bg-gradient-to-br ${country.color} rounded-2xl p-4 text-white transform hover:scale-105 transition-all duration-300 cursor-pointer shadow-lg hover:shadow-xl`}
-                >
-                  <div className="text-3xl mb-2">{country.flag}</div>
-                  <div className="font-bold text-lg">{country.name}</div>
-                  <div className="text-sm opacity-90">{country.continent}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Scroll qilish taklifi */}
-          <div className="mt-16 animate-bounce">
-            <div className="text-white text-sm flex flex-col items-center">
-              <span>Ko'proq ma'lumot olish uchun pastga scroll qiling</span>
-              <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center mt-2">
-                <div className="w-1 h-3 bg-white rounded-full mt-2"></div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
